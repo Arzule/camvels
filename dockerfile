@@ -1,11 +1,9 @@
-FROM tomcat:10-jdk22
+FROM maven:3.9-eclipse-temurin-17 AS build
+WORKDIR /app
+COPY . .
+RUN mvn -B clean package
 
-# Borra las apps por defecto de Tomcat
+FROM tomcat:9-jdk17
 RUN rm -rf /usr/local/tomcat/webapps/*
-
-# Copia tu WAR y lo nombra ROOT.war para que sea la aplicación principal
-COPY target/CamvelsInventario.war /usr/local/tomcat/webapps/ROOT.war
-
-EXPOSE 8080
-
+COPY --from=build /app/target/*.war /usr/local/tomcat/webapps/ROOT.war
 CMD ["catalina.sh", "run"]
