@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context path="/CamvelsInventario">
-    <!-- Configuración de la base de datos MySQL -->
     <Resource name="jdbc/camvels" 
               auth="Container" 
               type="javax.sql.DataSource"
@@ -10,5 +9,5 @@
               username="root" 
               password="admin" 
               driverClassName="com.mysql.cj.jdbc.Driver"
-              url="jdbc:mysql://mysql-camvels-camvels.h.aivencloud.com:21020/defaultdb?useSSL=true&requireSSL=true&verifyServerCertificate=false"/>
+              url="jdbc:mysql://mysql-camvels-camvels.h.aivencloud.com:21020/defaultdb?useSSL=true&amp;requireSSL=true&amp;verifyServerCertificate=false"/>
 </Context>
