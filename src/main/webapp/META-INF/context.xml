@@ -8,7 +8,7 @@
               maxIdle="10"
               maxWaitMillis="-1"
               driverClassName="com.mysql.cj.jdbc.Driver"
-              url="jdbc:mysql://mysql-camvels-camvels.h.aivencloud.com:21020/defaultdb?useSSL=true&amp;verifyServerCertificate=true&amp;trustCertificateKeyStoreUrl=file:WEB-INF/truststore.jks&amp;trustCertificateKeyStorePassword=password&amp;trustCertificateKeyStoreType=JKS"
+              url="jdbc:mysql://mysql-camvels-camvels.h.aivencloud.com:21020/defaultdb?useSSL=true&amp;verifyServerCertificate=true&amp;trustCertificateKeyStoreUrl=classpath:truststore.jks&amp;trustCertificateKeyStorePassword=password&amp;trustCertificateKeyStoreType=JKS"
               username="avnadmin"
               password="AVNS_uhAQC9ZG_6A2x2SOuld"/>
 </Context>
