@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/CamvelsInventario">
+    <!-- Configuración de la base de datos MySQL -->
+    <Resource name="jdbc/camvels" 
+              auth="Container" 
+              type="javax.sql.DataSource"
+              maxTotal="20" 
+              maxIdle="10" 
+              maxWaitMillis="-1"
+              username="root" 
+              password="admin" 
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/camvels?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
+</Context>
