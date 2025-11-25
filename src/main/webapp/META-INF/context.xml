@@ -8,7 +8,7 @@
               maxIdle="10"
               maxWaitMillis="-1"
               driverClassName="com.mysql.cj.jdbc.Driver"
-              url="jdbc:mysql://mysql-camvels-camvels.h.aivencloud.com:21020/defaultdb?sslMode=VERIFY_CA&amp;trustCertificateKeyStoreUrl=file:/usr/local/tomcat/conf/ca.pem"
+              url="jdbc:mysql://mysql-camvels-camvels.h.aivencloud.com:21020/defaultdb?sslMode=VERIFY_CA&amp;trustCertificateKeyStoreUrl=file:/usr/local/tomcat/conf/ca.pem&amp;trustCertificateKeyStoreType=PEM"
               username="avnadmin"
               password="AVNS_uhAQC9ZG_6A2x2SOuld"/>
 </Context>
